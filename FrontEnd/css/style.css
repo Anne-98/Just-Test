@@ -1,0 +1,131 @@
+*{
+margin: 0;
+box-sizing: border-box;
+border: 0;
+}
+
+
+/*Home page styling*/
+#menu{
+    background-color: white;
+}
+nav  ul  li h4 a{
+    color: black;
+    margin-right: 100px;
+    font-size: 70%;
+}
+/*media quey needed for smaller size screens*/
+#top-articles-div{
+    margin-top: 5%;
+    /* background-color:#dee2e6; */
+    height: 100%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+#travel-articles-div{
+    background-image: url('../images/backgrounds/home-screen_5.jpeg');
+    background-position: center;
+    background-size: cover;
+    border: 20px solid white;
+    padding: 5%;
+    border-bottom-right-radius: 20%;
+}
+#life-articles-div{
+    background-image: url('../images/backgrounds/home-screen_1.jpeg');
+    border: 20px solid white;
+    background-position: center;
+    background-size: cover;
+    padding: 2%;
+}
+#music-articles-div{
+    background-image: url('../images/backgrounds/home-screen_3.jpg');
+    border: 20px solid white;
+    background-position: center;
+    background-size: cover;
+    padding: 4%;
+    border-top-left-radius: 20%;
+}
+#travel-articles-div:hover, #life-articles-div:hover,#music-articles-div:hover{
+    background-position-x: right;
+    transform: translateX(2%);
+    transform: translateY(5%);
+}
+#toppers-title{
+animation: toppers-title-animation 7s infinite;
+}
+#footer-1{
+    width: 100%;
+    height: 2cm;
+    background-color: black;
+}
+#footer-2{
+    border-bottom: 5px solid black;
+}
+@keyframes toppers-title-animation{
+
+    0%{
+        transform: translateX(0%);
+    }
+    25%{
+        transform: translateX(1.5%);
+    }
+    25%{
+        transform: translateX(-0.5%);
+        border-right: 20px solid white;
+        color: white;
+        background-color: black;
+    }
+    75%{
+        transform: translateX(-1%);
+        border: 0;
+    }
+    100%{
+        transform: translateX(-1.5%);
+        border-left: 20px solid black;
+    }
+}
+
+/* Login page styling*/
+ #login-page-1{
+    margin-top: 10%;
+    background-color: black;
+}
+#login-page-2{
+    margin-top: 20%;
+    border-right: 5px solid black;
+    border-bottom: 5px solid black;
+}
+#login-page-3{
+}
+
+/*register page style*/
+#register-page-1{
+    width: 10%;
+    height: 10%;
+    animation: phone 2s infinite;
+}
+
+@keyframes phone {
+
+    25%{
+      background-image: url('../images/register_form/back_1.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    50%{
+      background-image: url('../images/register_form/back_2.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    75%{
+      background-image: url('../images/register_form/back_3.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    100%{
+        background-image: url('../images/register_form/back_1.jpg');
+        background-size: cover;
+        background-position: center;
+      }
+}
